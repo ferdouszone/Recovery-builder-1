@@ -15,9 +15,9 @@ on:
 
 env:
   MANIFEST: git://github.com/SKYHAWK-Recovery-Project/platform_manifest_twrp_omni.git -b android-9.0
-  DEVICE: rosy
-  DT_LINK: https://github.com/JamieHoSzeYui/android_recovery_xiaomi_rosy
-  DT_PATH: device/xiaomi/rosy
+  DEVICE: ice
+  DT_LINK: https://github.com/twrpdtgen/android_device_xiaomi_ice
+  DT_PATH: device/xiaomi/ice
   KERNEL_LINK: https://github.com/Pulkit077/kernel_xiaomi_rosy
   KERNEL_PATH: kernel/xiaomi/rosy
   TARGET: recoveryimage
@@ -67,4 +67,4 @@ jobs:
        - uses: actions/upload-artifact@v2
          with:
           name: recoveryimage
-          path: work/out/target/product/*/*.img
+          path: work/out/target/product/ice/recovery.img
